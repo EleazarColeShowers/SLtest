@@ -1,0 +1,204 @@
+{
+    "name": "Sustainable Living",
+    "short_name": "SL",
+    "description": "Sustainable",
+    "start_url": "/index.html",
+    "id": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#6200ea",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "assets/favcon.png",
+        "sizes": "327x186", 
+        "type": "image/png"
+      },
+      {
+        "src": "assets/favcon2.png",
+        "sizes": "342x215",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/pointer-1.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pointer-2.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pointer-3.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/western-hem.svg",
+        "sizes": "any",
+         "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/eastern-hem.svg",
+        "sizes": "any",
+         "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/triangles-1.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/triangles-2.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/bar-breaker.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/scan.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/eye.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/lennon.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pie-1.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pie-2.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pie-3.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pie-4.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pie-5.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pie-6.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pie-7.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/pie-8.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/webis-9.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/webis-1.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/webis-7.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/webis-3.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/webis-4.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/webis-5.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/logoTransparent.png",
+        "sizes": "685x344",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/weglotis-5-2.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/weglotis-5-1.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/palm-1.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/palm-2.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/palm-3.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/palm-4.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "assets/palm-5.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      }
+    ],
+    "screenshots": [
+        {
+            "src": "assets/desktopview.png",
+            "sizes": "1847x870",
+            "type": "image/png",
+            "form_factor": "wide"
+        },
+        {
+            "src": "assets/mobileview.png",
+            "sizes": "621x1080",
+            "type": "image/png"
+        }
+    ],
+    "scope": "/",
+    "lang": "en"
+  }
+  
