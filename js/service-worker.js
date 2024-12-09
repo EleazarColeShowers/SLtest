@@ -8,6 +8,7 @@ const CACHE_URLS = [
   '/index.html',
   '/styles.css',
   '/script.js',
+  '/manifest.json',
   '/assets/favcon.png',
   '/assets/favcon2.png',
   '/assets/pointer-1.svg',
