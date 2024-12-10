@@ -1,5 +1,3 @@
-
-
 const CACHE_NAME = 'sustainable-living-cache-v1';
 
 // Include all asset files from the manifest.json into the cache
@@ -48,35 +46,61 @@ const CACHE_URLS = [
 
 // Install event
 self.addEventListener('install', (event) => {
+  console.log('Service Worker installing...');
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      console.log('Opened cache');
-      return cache.addAll(CACHE_URLS);
-    })
+    caches.open(CACHE_NAME)
+      .then((cache) => {
+        console.log('Caching resources:', CACHE_URLS);
+        return cache.addAll(CACHE_URLS)
+          .then(() => {
+            console.log('All resources cached successfully');
+          })
+          .catch((error) => {
+            console.error('Error during caching resources:', error);
+          });
+      })
   );
 });
 
 // Activate event
 self.addEventListener('activate', (event) => {
+  console.log('Service Worker activating...');
   event.waitUntil(
-    caches.keys().then((cacheNames) => {
-      return Promise.all(
-        cacheNames.map((cache) => {
-          if (cache !== CACHE_NAME) {
-            console.log('Deleting old cache:', cache);
-            return caches.delete(cache);
-          }
-        })
-      );
-    })
+    caches.keys()
+      .then((cacheNames) => {
+        return Promise.all(
+          cacheNames.map((cache) => {
+            if (cache !== CACHE_NAME) {
+              console.log('Deleting old cache:', cache);
+              return caches.delete(cache);
+            }
+          })
+        );
+      })
+      .then(() => {
+        console.log('Old caches deleted, ready to activate');
+      })
+      .catch((error) => {
+        console.error('Error during activation:', error);
+      })
   );
 });
 
 // Fetch event
 self.addEventListener('fetch', (event) => {
+  console.log('Fetch event for:', event.request.url);
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
+    caches.match(event.request)
+      .then((response) => {
+        if (response) {
+          console.log('Serving from cache:', event.request.url);
+          return response;
+        }
+        console.log('Fetching from network:', event.request.url);
+        return fetch(event.request);
+      })
+      .catch((error) => {
+        console.error('Error fetching resource:', event.request.url, error);
+      })
   );
 });
